@@ -1,0 +1,19 @@
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > .labelContainer {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    & > input[type='checkbox'] {
+      margin-right: 1rem;
+    }
+  }
+
+  .completed {
+    text-decoration: line-through;
+  }
+}
